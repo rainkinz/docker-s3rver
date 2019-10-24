@@ -8,6 +8,6 @@
   "author": "rainkinz",
   "license": "ISC",
   "dependencies": {
-    "s3rver": "^3.5.0"
+    "s3rver": "2.2.9"
   }
 }

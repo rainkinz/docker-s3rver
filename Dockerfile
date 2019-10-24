@@ -1,4 +1,5 @@
-FROM mhart/alpine-node:latest
+#FROM mhart/alpine-node:latest
+FROM node:13-alpine
 
 RUN apk add --no-cache rsync
 
