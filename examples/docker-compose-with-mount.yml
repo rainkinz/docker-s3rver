@@ -5,4 +5,4 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - $PWD/example/bucket1:/data
+      - $PWD/examples/buckets:/data
