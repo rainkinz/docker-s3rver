@@ -37,15 +37,15 @@ example:
 docker-compose -f examples/docker-compose-with-mount.yml up --build
 ```
 
-
 Then use the `bin/aws-s3-local` script to access the server:
 
 ```
 bin/aws-s3-local ls
-2019-10-24 17:25:31 .git
-2019-10-24 17:25:31 bin
-2019-10-24 17:23:05 examples
-2019-10-24 17:17:40 node_modules
-```
+2019-10-24 17:33:02 parrots
+
+bin/aws-s3-local ls s3://parrots
+2019-10-24 17:33:02         25 parrot.txt
+
+bin/aws-s3-local cp s3://parrots/parrot.txt /tmp/t.txt
 
 
