@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  s3:
+    image: rainkinz/s3rver
+    ports:
+      - "8000:8000"
+    volumes:
+      - $PWD/example/bucket1:/data
