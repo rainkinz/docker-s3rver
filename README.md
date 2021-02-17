@@ -47,5 +47,5 @@ bin/aws-s3-local ls s3://parrots
 2019-10-24 17:33:02         25 parrot.txt
 
 bin/aws-s3-local cp s3://parrots/parrot.txt /tmp/t.txt
-
+```
 

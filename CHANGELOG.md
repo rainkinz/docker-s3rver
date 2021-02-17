@@ -1,3 +1,8 @@
+# 1.0 20210217
+
+* Updated base node image to `15-alpine`.
+* Updated all npm packages
+
 # 20191024
 
 * Breaking changes:
