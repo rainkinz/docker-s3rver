@@ -2,11 +2,12 @@
 
 set -e
 
-VERSION="1.1"
+VERSION="1.2"
 
 docker build -t rainkinz/s3rver:$VERSION .
 
+docker tag rainkinz/s3rver:$VERSION rainkinz/s3rver:latest
+
 docker push rainkinz/s3rver:$VERSION
 
-docker tag rainkinz/s3rver:$VERSION  rainkinz:latest
 docker push rainkinz/s3rver:latest
