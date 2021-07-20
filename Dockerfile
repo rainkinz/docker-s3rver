@@ -2,9 +2,6 @@ FROM node:16-alpine
 
 RUN apk add --no-cache rsync
 
-# RUN npm install -g s3rver@2.2.3
-# RUN npm install aws-sdk
-
 RUN mkdir /data
 RUN mkdir /app
 
