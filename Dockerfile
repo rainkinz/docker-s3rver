@@ -1,8 +1,7 @@
 FROM node:16-alpine
 
-RUN apk add --no-cache rsync
+# RUN apk add --no-cache rsync
 
-RUN mkdir /data
 RUN mkdir /app
 
 WORKDIR /app
@@ -13,5 +12,6 @@ RUN npm install
 
 COPY startup.sh /app/startup.sh
 EXPOSE 8000
+VOLUME /data
 
 CMD ["sh", "/app/startup.sh"]
